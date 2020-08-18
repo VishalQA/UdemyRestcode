@@ -20,7 +20,7 @@ public class OauthTest {
 //		System.setProperty("webdriver.chrome.driver", "C:\\Users\\jaju_v\\Downloads\\chromedriver_win32\\chromedriver.exe");
 //		WebDriver driver = new ChromeDriver();
 //		
-		String url = "https://rahulshettyacademy.com/getCourse.php?state=validateapi&code=4%2F3AERAcVi_V-Kw0Y7ZaG6fXJLy_V7vRnEtmlToWnOF7Ep9JBwr_04Ghnys_-KrFy4JdBOG4Ri7agZmzVX0EZwsvA&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none";
+		String url = "https://rahulshettyacademy.com/getCourse.php?state=validateapi&code=4%2F3AEz-XAwj5L6SvbqCiyZQNms5_3CGWcfOnRyNxisiZXIq8yejtY_gGdAQzqrQWcw_EV6IhkTQm5eQiJnOxAuLjU&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none";
 				
 		String partialcode = url.split("code=")[1];
 		String code = partialcode.split("&scope=")[0];
@@ -55,13 +55,15 @@ public class OauthTest {
 		
 //		System.out.println(response);
 		
-		System.out.println(gc.getCourses());
+		
 		System.out.println(gc.getExpertise());
 		System.out.println(gc.getInstructor());
 		System.out.println(gc.getLinkedIn());
 		System.out.println(gc.getServices());
+		System.out.println();
 		
-		
+		System.out.println(gc.getCourses().getApi().get(0).getCourseTitle());
+		System.out.println(gc.getCourses().getApi().get(1).getCourseTitle());
 	}
 
 }
