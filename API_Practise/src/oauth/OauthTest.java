@@ -6,18 +6,21 @@ import static org.hamcrest.Matchers.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.restassured.parsing.Parser;
 import io.restassured.path.json.JsonPath;
+import pojo.Getcourses;
+import pojo.Api;
 
 public class OauthTest {
 	
 	public static void main(String[] args) {
 		
-		String[] coursetitles = {"Selenium Webdriver Java","Cypress", "Protractor"};
+//		String[] coursetitles = {"Selenium Webdriver Java","Cypress", "Protractor"};
 		
 //		System.setProperty("webdriver.chrome.driver", "C:\\Users\\jaju_v\\Downloads\\chromedriver_win32\\chromedriver.exe");
 //		WebDriver driver = new ChromeDriver();
 //		
-		String url = "https://rahulshettyacademy.com/getCourse.php?state=verify&code=4%2F3AGOwYwVWd-rUl1EF9NUH9VZGC89PQR7zNbgNjgqPJa4t2GoZMJg87hk3T7QKpSfZcbfLRUyhptm3uD9yI9ZTYY&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent#";
+		String url = "https://rahulshettyacademy.com/getCourse.php?state=validateapi&code=4%2F3AERAcVi_V-Kw0Y7ZaG6fXJLy_V7vRnEtmlToWnOF7Ep9JBwr_04Ghnys_-KrFy4JdBOG4Ri7agZmzVX0EZwsvA&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none";
 				
 		String partialcode = url.split("code=")[1];
 		String code = partialcode.split("&scope=")[0];
@@ -43,14 +46,22 @@ public class OauthTest {
 		JsonPath js = new JsonPath(accesstokenresponse);
 		String accesstoken = js.getString("access_token");
 		
-		String response  =  given().queryParam("access_token", accesstoken)
+		Getcourses gc  =  given().queryParam("access_token", accesstoken)
+	    .expect()
+	    .defaultParser(Parser.JSON)
 		.when()
-		.log()
-		.all()
 		.get("https://rahulshettyacademy.com/getCourse.php")
-		.asString();
+		.as(Getcourses.class);
 		
-		System.out.println(response);
+//		System.out.println(response);
+		
+		System.out.println(gc.getCourses());
+		System.out.println(gc.getExpertise());
+		System.out.println(gc.getInstructor());
+		System.out.println(gc.getLinkedIn());
+		System.out.println(gc.getServices());
+		
+		
 	}
 
 }

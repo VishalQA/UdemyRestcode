@@ -12,9 +12,6 @@
 	<classpathentry kind="lib" path="C:/Users/jaju_v/git/UdemyAllJarsforAPI/BasicTestProject/libs/httpclient-4.5.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/jaju_v/git/UdemyAllJarsforAPI/BasicTestProject/libs/httpcore-4.4.6.jar"/>
 	<classpathentry kind="lib" path="C:/Users/jaju_v/git/UdemyAllJarsforAPI/BasicTestProject/libs/httpmime-4.5.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/jaju_v/git/UdemyAllJarsforAPI/BasicTestProject/libs/jackson-annotations-2.11.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/jaju_v/git/UdemyAllJarsforAPI/BasicTestProject/libs/jackson-core-2.11.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/jaju_v/git/UdemyAllJarsforAPI/BasicTestProject/libs/jackson-databind-2.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/jaju_v/git/UdemyAllJarsforAPI/BasicTestProject/libs/jakarta.activation-api-1.2.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/jaju_v/git/UdemyAllJarsforAPI/BasicTestProject/libs/jakarta.xml.bind-api-2.3.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/jaju_v/git/UdemyAllJarsforAPI/BasicTestProject/libs/jaxb-osgi-2.3.0.1.jar"/>
@@ -38,14 +35,14 @@
 	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/httpclient-4.5.3.jar"/>
 	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/httpcore-4.4.6.jar"/>
 	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/httpmime-4.5.3.jar"/>
-	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/jackson-annotations-2.11.0.jar"/>
-	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/jackson-core-2.11.0.jar"/>
-	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/jackson-databind-2.11.0.jar"/>
 	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/jakarta.activation-api-1.2.1.jar"/>
 	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/jakarta.xml.bind-api-2.3.2.jar"/>
 	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/jaxb-osgi-2.3.0.1.jar"/>
 	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/org.apache.sling.javax.activation-0.1.0.jar"/>
 	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/rest-assured-4.3.0.jar"/>
 	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/tagsoup-1.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/jackson-annotations-2.11.0.jar"/>
+	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/jackson-core-2.11.0.jar"/>
+	<classpathentry kind="lib" path="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/jackson-databind-2.11.0.jar" sourcepath="D:/MyData_Dell_27June20/eclipse-workspace _VJ/JARforAPI/jackson-databind-2.11.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
