@@ -13,12 +13,12 @@ public class Payloads {
 				"    \"lng\": 33.427362\r\n" + 
 				"  },\r\n" + 
 				"  \"accuracy\": 50,\r\n" + 
-				"  \"name\": \"Frontline house\",\r\n" + 
+				"  \"name\": \"AFrontline house\",\r\n" + 
 				"  \"phone_number\": \"(+91) 983 893 3937\",\r\n" + 
-				"  \"address\": \"106, lane1 , area1 ,city1 ,USA\",\r\n" + 
+				"  \"address\": \"200, Alane1 , area1 ,city1 ,USA\",\r\n" + 
 				"  \"types\": [\r\n" + 
-				"    \"shoe park\",\r\n" + 
-				"    \"shop\"\r\n" + 
+				"    \"Ashoe park\",\r\n" + 
+				"    \"Ashop\"\r\n" + 
 				"  ],\r\n" + 
 				"  \"website\": \"http://google.com\",\r\n" + 
 				"  \"language\": \"French-IN\"\r\n" + 
